@@ -80,8 +80,4 @@ the response url will cached in this directory
 - **Type:** `string`
 - **Default:** `./dist_cdn`
 
-final html directory
-
-```
-
-```
+output directory
