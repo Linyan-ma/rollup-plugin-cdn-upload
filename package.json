@@ -17,7 +17,6 @@
     "cdn"
   ],
   "author": "iryn",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Linyan-ma/rollup-plugin-cdn-upload/issues"
   },
