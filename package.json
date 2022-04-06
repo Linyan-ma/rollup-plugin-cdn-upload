@@ -1,11 +1,9 @@
 {
   "name": "rollup-plugin-cdn-upload",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "license": "MIT",
   "description": "upload rollup assets&chunks to your cdn",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Linyan-ma/rollup-plugin-cdn-upload.git"
@@ -21,7 +19,7 @@
     "url": "https://github.com/Linyan-ma/rollup-plugin-cdn-upload/issues"
   },
   "homepage": "https://github.com/Linyan-ma/rollup-plugin-cdn-upload#readme",
-  "devDependencies": {
+  "dependencies": {
     "fs-extra": "^10.0.1",
     "magic-string": "^0.26.1"
   }
