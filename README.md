@@ -11,7 +11,7 @@ npm install rollup-plugin-cdn-upload --save-dev
 ## Usage
 
 ```js
-import uploadCdn from "rollup-plugin-cdn-upload";
+import cdnUpload from "rollup-plugin-cdn-upload";
 
 export default {
   input: "src/index.js",
@@ -20,9 +20,9 @@ export default {
     format: "cjs",
   },
   plugins: [
-    uploadCdn({
+    cdnUpload({
       uploader: (content, ext) => {
-        return Promise.resolve("CDN_UPLOADER_PH");
+        return Promise.resolve("");
       },
     }),
   ],
@@ -37,9 +37,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       plugins: [
-        uploadCdn({
+        cdnUpload({
           uploader: (content, ext) => {
-            return Promise.resolve("CDN_UPLOADER_PH");
+            return Promise.resolve("");
           },
         }),
       ],
@@ -56,7 +56,7 @@ export default defineConfig({
 - **Default:**
   ```js
   (content: sourceCode, ext: type) => {
-    return Promise.resolve("CDN_UPLOADER_PH");
+    return Promise.resolve("");
   };
   ```
   your cdn upload function with current upload source code and type ext. the funtion return a Promise with final url resolved

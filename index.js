@@ -23,10 +23,10 @@ const defaultOpts = {
   cacheDir: "./dist_cdn",
   output: "./dist_cdn",
   uploader: (content, ext) => {
-    return Promise.resolve("CDN_UPLOADER_PH");
+    return Promise.resolve("");
   },
 };
-function uploadCdnPlugin(options) {
+function cdnUploadPlugin(options) {
   let uploadedChunkMap = new Map();
   let assetsList;
   const opts = { ...defaultOpts, ...options };
@@ -220,4 +220,4 @@ function uploadCdnPlugin(options) {
   };
 }
 
-module.exports = uploadCdnPlugin;
+module.exports = cdnUploadPlugin;

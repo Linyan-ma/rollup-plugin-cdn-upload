@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-cdn-upload",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "upload rollup assets&chunks to your cdn",
   "main": "index.js",
   "scripts": {
