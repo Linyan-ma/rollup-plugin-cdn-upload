@@ -193,7 +193,7 @@ function cdnUploadPlugin(options) {
         // replace chunks url
         const chunkDeps_array = getBundleAst(chunks);
         for (const chunkDeps of chunkDeps_array) {
-          const a = await replaceChunks(chunkDeps);
+          await replaceChunks(chunkDeps);
         }
         // const dist = options.dir
         // replace html url
