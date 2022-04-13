@@ -194,7 +194,6 @@ function cdnUploadPlugin(options) {
         const chunkDeps_array = getBundleAst(chunks);
         for (const chunkDeps of chunkDeps_array) {
           const a = await replaceChunks(chunkDeps);
-          console.log(a, "ppppp");
         }
         // const dist = options.dir
         // replace html url
@@ -205,7 +204,7 @@ function cdnUploadPlugin(options) {
           fse.outputFileSync(`${opts.output}/${fileName}`, html.source);
         }
       } catch (e) {
-        console.log("error:", e);
+        console.error("error:", e);
       }
     },
     closeBundle() {
